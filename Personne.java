@@ -5,13 +5,30 @@ public abstract class Personne  {
 	protected String nom, prénom; 
 	protected int id;
 	
-	public Personne (String getnom, String getprénom, int getid) {
+	public Personne (String setnom, String setprénom, int setid) {
 		
-		 getnom = this.nom;
-		 getprénom = this.prénom;
-		 getid = this.id;
+		 this.nom = setnom;
+		 this.prénom = setprénom;
+		 this.id = setid;
 		
 	}
+	
+	public String getnom() {
+		String name = this.nom;
+		return name;
+	}
+
+	public String getprénom() {
+		String firstname = this.prénom;
+		return firstname;
+	}
+	
+	public int getid() {
+		int identifiant = this.id;
+		return identifiant;
+		
+	}
+
 
 	public abstract void afficherDetails();
 
